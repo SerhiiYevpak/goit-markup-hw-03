@@ -113,9 +113,12 @@ body {
   font-size: 20px;
   line-height: 1.2;
 }
+.team-list {
+  background-color: var(--primary-cloud-color);
+}
 
 .team-item {
-  background-color: var(--primary-cloud-color);
+  background-color: var(--primary-bg-color);
 }
 /* footer */
 .page-footer {
