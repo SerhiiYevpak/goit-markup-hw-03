@@ -1,13 +1,6 @@
 html {
   box-sizing: border-box;
 }
-:root {
-  --primary-text-color: #434455;
-  --primary-header-color: #2e2f42;
-  --primary-bg-color: #ffffff;
-  --primary-brand-color: #4d5ae5;
-  --primary-cloud-color: #f4f4fd;
-}
 *,
 *::before,
 *::after {
@@ -15,6 +8,14 @@ html {
   padding: 0;
   margin: 0;
 }
+:root {
+  --primary-text-color: #434455;
+  --primary-header-color: #2e2f42;
+  --primary-bg-color: #ffffff;
+  --primary-brand-color: #4d5ae5;
+  --primary-cloud-color: #f4f4fd;
+}
+
 
 body {
   background-color: var(--primary-bg-color);
