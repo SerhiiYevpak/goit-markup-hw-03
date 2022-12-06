@@ -9,6 +9,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700;900&display=swap"
     rel="stylesheet" />
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css" />
   <title>Studio</title>
   <link rel="stylesheet" href="./css/styles.css" />
 </head>
@@ -16,22 +18,24 @@
 <body>
   <!-- topline -->
   <header class="page-header">
-    <nav>
-      <a class="logo-item" href="./index.html">web<span class="header-logo">studio</span></a>
-      <ul class="nav-items list">
-        <li><a class="nav-item current" href="./index.html">Studio</a></li>
-        <li><a class="nav-item" href="./portfolio.html">Portfolio</a></li>
-        <li><a class="nav-item" href="#">Contacts</a></li>
+    <div class="container">
+      <nav>
+        <a class="logo-item" href="./index.html">web<span class="header-logo">studio</span></a>
+        <ul class="nav-items list">
+          <li class="nav-list"><a class="nav-item current" href="./index.html">Studio</a></li>
+          <li class="nav-list"><a class="nav-item" href="./portfolio.html">Portfolio</a></li>
+          <li class="nav-list"><a class="nav-item" href="#">Contacts</a></li>
+        </ul>
+      </nav>
+      <ul class="contact-items list">
+        <li class="contact-list">
+          <a class="contact-item" href="mailto:info@devstudio.com">info@devstudio.com</a>
+        </li>
+        <li class="contact-list">
+          <a class="contact-item" href="tel:+11(000)111-11-11">+11 (000) 111-11-11</a>
+        </li>
       </ul>
-    </nav>
-    <ul class="contact-items list">
-      <li>
-        <a class="contact-item" href="mailto:info@devstudio.com">info@devstudio.com</a>
-      </li>
-      <li>
-        <a class="contact-item" href="tel:+11(000)111-11-11">+11 (000) 111-11-11</a>
-      </li>
-    </ul>
+    </div>
   </header>
 
   <main>
