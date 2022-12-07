@@ -39,6 +39,12 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
 }
+body,
+p,
+h2,
+h3 {
+  margin: 0;
+}
 
 /* logo */
 .logo-item {
@@ -67,38 +73,39 @@ body {
   margin-left: auto;
   margin-right: auto;
 }
-/* header container */
-.header-container {
+/* container */
+.container {
   display: flex;
-  flex-wrap: wrap;
   width: 1158px;
   padding-left: 15px;
   padding-right: 15px;
-
-  justify-content: space-between;
   margin-left: auto;
   margin-right: auto;
 }
 
-.header-container .header-nav,
-.header-container .contact-items {
+.container .header-nav,
+.container .contact-items {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
 }
 .nav-items,
 .contact-items {
   display: flex;
 }
-.contact-list {
-  margin-left: auto;
-}
 
 .nav-items .nav-list + .nav-list {
   margin-left: 40px;
 }
+.nav-list:last-child {
+  margin-right: 331px;
+}
 
 .contact-items .contact-list:not(:last-child) {
   margin-right: 40px;
+}
+.contact-items .contact-list {
+  margin-right: auto;
 }
 
 .nav-item,
@@ -172,7 +179,33 @@ body {
 }
 
 /* sections */
+.section {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
 
+.section:not(:last-child) {
+  padding-bottom: 0;
+}
+.container .list {
+  width: 264px;
+  margin-right: 24px;
+}
+.list:last-child {
+  margin-right: 0;
+}
+.features-title {
+  margin-bottom: 8px;
+}
+/* work */
+
+.container .work-list {
+  width: calc ((100%-48px)/3);
+  margin-left: 24px;
+}
+.work-list:first-child {
+  margin-left: 0;
+}
 .section-title {
   color: var(--primary-header-color);
   font-weight: 700;
@@ -180,6 +213,8 @@ body {
   line-height: 1.11;
   text-align: center;
   text-transform: capitalize;
+
+  margin-bottom: 72px;
 }
 .team-title,
 .features-title,
@@ -195,10 +230,19 @@ body {
 
 .team-item {
   background-color: var(--primary-bg-color);
+
+  width: calc ((100%-72px)/4);
+  margin-left: 24px;
+}
+.team-item:first-child {
+  margin-left: 0;
 }
 /* footer */
 .page-footer {
   background-color: var(--primary-header-color);
+  width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .text-footer {
   color: #e7e9fc;
